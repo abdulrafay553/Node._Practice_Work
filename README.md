@@ -1,3 +1,5 @@
+# Express.js with Handlebars Practuce work
+
 # Packages used:
 1-bcrypt
 2-body-parser
@@ -19,4 +21,4 @@
 ## To start the development server
 `nodemon server`
 
-## Create a new DB named "batch106" in your studio 3t and then import the files from Mongodb file folder.
+## Create a new DB named "batch106" in your Mongodb GUI in local computer or setup Mongodb atlas and change code according to your needs.
