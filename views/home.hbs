@@ -1,0 +1,21 @@
+<h1>HOME PAGE - HBS</h1>
+<hr />
+<h5>Welcome user: {{name}}</h5>
+
+<form method="post" action="/api/findprd">
+  <div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label">Search Product</label>
+    <input
+      type="text"
+      class="form-control"
+      id="formGroupExampleInput"
+      placeholder="Enter Product Name"
+      name="productname"
+    />
+  </div>
+  <div class="mb-3">
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">CLICK HERE TO SEARCH</button>
+    </div>
+  </div>
+</form>

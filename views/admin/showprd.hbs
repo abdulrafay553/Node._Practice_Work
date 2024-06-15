@@ -1,0 +1,49 @@
+<h1>SHOW ALL PRODUCTS</h1>
+<hr />
+
+<table class="table table-dark table-hover table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Image</th>
+      <th scope="col">Display</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    {{#each prdData as |data id|}}
+
+      <tr>
+        <th scope="row">{{this.id}}</th>
+        <td>{{this.productname}}</td>
+        <td>{{this.productprice}}</td>
+        <td>{{this.productimage}}</td>
+        <td>
+          <a href="/api/findprdid/{{this._id}}">
+            <img src="/{{this.productimage}}" alt="Display" class="prdsize" />
+          </a>
+        </td>
+        <td>
+          <a href="/admin/editprd/{{this._id}}">
+            <img src="/images/Edit.png" alt="Edit" class="iconsize" />
+          </a>
+        </td>
+        <td>
+          <a href="/admin/delprd/{{this._id}}">
+            <img src="/images/Delete.png" alt="Delete" class="iconsize" />
+          </a>
+        </td>
+      </tr>
+
+    {{/each}}
+
+  </tbody>
+</table>
+
+{{!-- {{#each prdData as |data id|}}
+  <h2>{{this.productname}} - {{this.productprice}} - {{this.productimage}}</h2>
+{{/each}} --}}
