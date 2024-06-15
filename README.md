@@ -1,4 +1,4 @@
-# Express.js with Handlebars Practuce work
+# Express.js with Handlebars Practice work
 
 # Packages used:
 1-bcrypt
